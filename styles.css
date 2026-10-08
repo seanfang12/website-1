@@ -11,6 +11,11 @@ body {
     line-height: 1.6;
 }
 
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 section {
     padding: 3rem 1.5rem;
 }
@@ -28,8 +33,7 @@ p {
 header {
     background-color: #dbeafe;
     padding: 1rem 1.5rem;
-
-    display: flex; /* puts the title and nav next to each other */
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -40,7 +44,7 @@ header h2 {
 
 nav ul {
     list-style: none;
-    display: flex; /* turns the nav list into a row */
+    display: flex;
     gap: 1rem;
 }
 
@@ -119,7 +123,7 @@ tbody tr:nth-child(even) {
 .exercise-card img {
     width: 100%;
     height: 220px;
-    object-fit: cover; /* keeps photos from stretching */
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
@@ -173,9 +177,9 @@ button:hover {
     background-color: #1d4ed8;
 }
 
-main {
-    max-width: 1100px;
-    margin: 0 auto;
+#form-message {
+    margin-top: 1rem;
+    font-weight: 600;
 }
 
 footer {
