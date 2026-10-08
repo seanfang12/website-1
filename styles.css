@@ -40,8 +40,10 @@ header {
     align-items: center;
 }
 
-header h2 {
+.site-title {
     margin-bottom: 0;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 
 nav ul {
