@@ -18,6 +18,8 @@ main {
 
 section {
     padding: 3rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 h1,
@@ -46,6 +48,8 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 nav a {
@@ -71,6 +75,69 @@ nav a:hover {
 #intro p {
     max-width: 700px;
     margin: 0 auto 1rem;
+}
+
+#blueprint {
+    background-color: #eff6ff;
+}
+
+#split {
+    background-color: #f5f3ff;
+}
+
+#exercises {
+    background-color: #f8fafc;
+}
+
+#intensity {
+    background-color: #fef2f2;
+}
+
+#recovery {
+    background-color: #f0fdf4;
+}
+
+#cardio {
+    background-color: #ecfeff;
+}
+
+#consistency {
+    background-color: #f5f3ff;
+}
+
+#social-media {
+    background-color: #fff1f2;
+}
+
+#enjoyment {
+    background-color: #f0fdf4;
+}
+
+#questions {
+    background-color: #eff6ff;
+}
+
+#split h2,
+#questions h2 {
+    color: #2563eb;
+}
+
+#intensity h2,
+#social-media h2 {
+    color: #dc2626;
+}
+
+#recovery h2,
+#enjoyment h2 {
+    color: #15803d;
+}
+
+#cardio h2 {
+    color: #0891b2;
+}
+
+#consistency h2 {
+    color: #7c3aed;
 }
 
 ul,
@@ -109,11 +176,13 @@ tbody tr:nth-child(even) {
 
 .exercise-card {
     background-color: white;
-    border: 1px solid #d1d5db;
+    border: 2px solid #bfdbfe;
     border-radius: 10px;
     padding: 1rem;
     flex: 1 1 250px;
     transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .exercise-card:hover {
@@ -122,10 +191,14 @@ tbody tr:nth-child(even) {
 
 .exercise-card img {
     width: 100%;
-    height: 220px;
+    height: 380px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
+}
+
+.exercise-card p {
+    flex-grow: 1;
 }
 
 #recovery img,
@@ -160,6 +233,7 @@ textarea {
     border: 1px solid #cbd5e1;
     border-radius: 6px;
     font: inherit;
+    background-color: white;
 }
 
 button {
@@ -216,6 +290,10 @@ footer p {
 
     .exercise-list {
         flex-direction: column;
+    }
+
+    .exercise-card img {
+        height: 300px;
     }
 
     table {
