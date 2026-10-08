@@ -1,18 +1,12 @@
-const form = document.querySelector("form");
-const nameInput = document.querySelector("#name");
-const questionInput = document.querySelector("#question");
-const formMessage = document.querySelector("#form-message");
+const toggleButton = document.querySelector("#toggle-exercises");
+const exerciseList = document.querySelector(".exercise-list");
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const name = nameInput.value;
-    const question = questionInput.value;
-
-    if (name === "" || question === "") {
-        formMessage.textContent = "Please enter your name and a question.";
+toggleButton.addEventListener("click", function() {
+    if (exerciseList.style.display === "none") {
+        exerciseList.style.display = "flex";
+        toggleButton.textContent = "Hide Exercises";
     } else {
-        formMessage.textContent = "Thanks, " + name + "! Your question was submitted.";
-        form.reset();
+        exerciseList.style.display = "none";
+        toggleButton.textContent = "Show Exercises";
     }
 });
